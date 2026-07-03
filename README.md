@@ -8,27 +8,26 @@ Homebrew formulae for [Ma'at](https://github.com/UemitCebi/maat) and other tools
 brew install UemitCebi/tap/maat
 ```
 
-Homebrew 6.0+ asks you to trust a third-party tap the first time you install
-from it (a one-time supply-chain safeguard). If you see
+This fully-qualified form installs directly — naming the tap on the command
+line satisfies Homebrew 6.0+'s tap-trust check, so there is no prompt.
 
-```
-Error: Refusing to load formula uemitcebi/tap/maat from untrusted tap uemitcebi/tap.
+### Installing by short name
+
+If you'd rather tap once and then use the short name, you'll hit Homebrew's
+tap-trust safeguard (it only kicks in when the tap isn't named on the command
+line):
+
+```bash
+brew tap UemitCebi/tap
+brew install maat
+# Error: Refusing to load formula uemitcebi/tap/maat from untrusted tap …
 ```
 
-trust the tap once, then install:
+Trust the tap once (stored per-machine in `~/.homebrew/trust.json`), then it
+works:
 
 ```bash
 brew trust UemitCebi/tap
-brew install UemitCebi/tap/maat
-```
-
-The trust acknowledgment is stored locally (`~/.homebrew/trust.json`) and only
-needs to be done once per machine.
-
-Or tap first, then install by short name:
-
-```bash
-brew tap UemitCebi/tap      # prompts to trust the tap
 brew install maat
 ```
 
