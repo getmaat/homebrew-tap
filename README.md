@@ -1,11 +1,11 @@
-# UemitCebi Homebrew Tap
+# Get Ma'at Homebrew Tap
 
-Homebrew formulae for [Ma'at](https://github.com/UemitCebi/maat) and other tools.
+Homebrew formulae for [Ma'at](https://github.com/getmaat/maat) and other tools.
 
 ## Install
 
 ```bash
-brew install UemitCebi/tap/maat
+brew install getmaat/tap/maat
 ```
 
 This fully-qualified form installs directly — naming the tap on the command
@@ -18,16 +18,16 @@ tap-trust safeguard (it only kicks in when the tap isn't named on the command
 line):
 
 ```bash
-brew tap UemitCebi/tap
+brew tap getmaat/tap
 brew install maat
-# Error: Refusing to load formula uemitcebi/tap/maat from untrusted tap …
+# Error: Refusing to load formula getmaat/tap/maat from untrusted tap …
 ```
 
 Trust the tap once (stored per-machine in `~/.homebrew/trust.json`), then it
 works:
 
 ```bash
-brew trust UemitCebi/tap
+brew trust getmaat/tap
 brew install maat
 ```
 
