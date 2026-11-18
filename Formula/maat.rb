@@ -7,7 +7,7 @@
 class Maat < Formula
   desc "Documentation-as-code for humans and AI agents"
   homepage "https://github.com/getmaat/maat"
-  version "0.7.0"
+  version "0.8.0"
   license "Apache-2.0"
 
   livecheck do
@@ -17,23 +17,23 @@ class Maat < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/getmaat/maat/releases/download/v0.7.0/maat_0.7.0_darwin_arm64.tar.gz"
-      sha256 "eec9213d471ed79169b07045d9ae7eb52372fcda0a53548199f8c6aa364bbec8"
+      url "https://github.com/getmaat/maat/releases/download/v0.8.0/maat_0.8.0_darwin_arm64.tar.gz"
+      sha256 "b978fc4d561e70a93f597044997d98af3f61c2d73c8b2c2a12d8289d7c21cac6"
     end
     on_intel do
-      url "https://github.com/getmaat/maat/releases/download/v0.7.0/maat_0.7.0_darwin_amd64.tar.gz"
-      sha256 "b25863dfa9c92288b1936cbebeb1d35e0b69d22f2403e91dbec75be1c8e8af3d"
+      url "https://github.com/getmaat/maat/releases/download/v0.8.0/maat_0.8.0_darwin_amd64.tar.gz"
+      sha256 "86a866671fe26c62abe351721888bc326f2a8005a335a47e097411e7410d6e04"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/getmaat/maat/releases/download/v0.7.0/maat_0.7.0_linux_arm64.tar.gz"
-      sha256 "686d03fbc99218b389d000f681a9b02031a134f8ff04e14beebf01ef1f4f2acc"
+      url "https://github.com/getmaat/maat/releases/download/v0.8.0/maat_0.8.0_linux_arm64.tar.gz"
+      sha256 "8e9d2a43c98334ecb20589280dd857f49eb81de40d4689448b0b698a187f2894"
     end
     on_intel do
-      url "https://github.com/getmaat/maat/releases/download/v0.7.0/maat_0.7.0_linux_amd64.tar.gz"
-      sha256 "0227a0080e033bc5562180f43341a9a2491191b010281eda26a51823afb50329"
+      url "https://github.com/getmaat/maat/releases/download/v0.8.0/maat_0.8.0_linux_amd64.tar.gz"
+      sha256 "951009a4a5c8547d80f412bc189b0e798dfe569b0b0cc1db861d2a105e7e5ab8"
     end
   end
 
